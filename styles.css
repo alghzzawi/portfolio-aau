@@ -525,7 +525,6 @@ section {
   }
 }
 
-
 #footer {
   background-color: #111;
   color: white;
@@ -539,12 +538,14 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .footer-column {
   flex: 1;
   min-width: 200px;
-  text-align: left; /* Align content to the left */
+  text-align: left;
+  margin-bottom: 20px; /* Add spacing between columns for smaller screens */
 }
 
 .footer-column h3 {
@@ -575,3 +576,32 @@ section {
   color: #0073e6;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .footer-column ul li {
+    margin: 5px 0; /* Reduce margin for list items */
+  }
+}
+
+@media (max-width: 480px) {
+  #footer {
+    padding: 20px 10px; /* Reduce padding for very small screens */
+  }
+
+  .footer-column h3 {
+    font-size: 1.2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .footer-column ul li {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
