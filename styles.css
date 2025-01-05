@@ -93,7 +93,7 @@ section {
   color: white;
   min-height: 100vh;
   position: relative;
-  background-image: url('image/background.jpg');
+  background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -334,7 +334,7 @@ section {
 }
 
 .stats-section {
-  background: url('image/background.jpg') no-repeat center center/cover;
+  background: url('background.jpg') no-repeat center center/cover;
   padding: 60px 20px;
   text-align: center;
   color: white;
