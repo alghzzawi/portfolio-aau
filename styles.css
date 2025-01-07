@@ -330,8 +330,8 @@ section {
 }
 
 .project-item p {
-  position: relative; /* Ensures it's not affected by the overlay */
-  z-index: 2; /* Places it above the overlay */
+  position: relative;
+  z-index: 2;
 }
 
 .project-item p a {
@@ -381,7 +381,7 @@ section {
   font-size: 3rem;
   margin: 0;
   font-weight: bold;
-  color: #3399ff; /* Highlighted number color */
+  color: #3399ff; 
 }
 
 .stat-item p {
@@ -538,14 +538,14 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .footer-column {
   flex: 1;
   min-width: 200px;
   text-align: left;
-  margin-bottom: 20px; /* Add spacing between columns for smaller screens */
+  margin-bottom: 20px; 
 }
 
 .footer-column h3 {
@@ -576,32 +576,31 @@ section {
   color: #0073e6;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /* Stack columns vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .footer-column {
-    text-align: center; /* Center align text for smaller screens */
+    text-align: center;
   }
 
   .footer-column ul li {
-    margin: 5px 0; /* Reduce margin for list items */
+    margin: 5px 0; 
   }
 }
 
 @media (max-width: 480px) {
   #footer {
-    padding: 20px 10px; /* Reduce padding for very small screens */
+    padding: 20px 10px; 
   }
 
   .footer-column h3 {
-    font-size: 1.2rem; /* Adjust heading size for smaller screens */
+    font-size: 1.2rem; 
   }
 
   .footer-column ul li {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    font-size: 0.9rem; 
   }
 }

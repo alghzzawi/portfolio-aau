@@ -4,22 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const alternateText = "I’m MY FULL NAME.";
 
     setInterval(() => {
-        // Fade out the heading
         welcomeHeading.style.opacity = 0;
         setTimeout(() => {
-            // Toggle text and use innerHTML to handle <br>
             welcomeHeading.innerHTML = 
                 welcomeHeading.innerHTML === originalText ? alternateText : originalText;
-            // Fade back in
             welcomeHeading.style.opacity = 1;
         }, 500);
     }, 6000);
 });
 
-// JavaScript for Counter Animation
 document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll('.counter');
-    const speed = 200; // Adjust speed as desired
+    const speed = 200; 
 
     const runCounter = () => {
         counters.forEach(counter => {
@@ -41,14 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Detect when stats section is in view
     const statsSection = document.querySelector('.stats-section');
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     runCounter();
-                    observer.disconnect(); // Run only once
+                    observer.disconnect();
                 }
             });
         },
@@ -80,7 +75,6 @@ function smoothScroll(target, duration) {
     requestAnimationFrame(animation);
 }
 
-// Usage example:
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
@@ -88,6 +82,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetId = this.getAttribute("href").substring(1);
         const targetElement = document.getElementById(targetId);
         
-        smoothScroll(targetElement, 1000); // Adjust duration here
+        smoothScroll(targetElement, 1000);
     });
 });
